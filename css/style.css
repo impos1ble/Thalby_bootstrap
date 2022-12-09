@@ -1,3 +1,15 @@
+header .navbar-nav li a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #1C1B1B;
+  margin-left: 12px;
+}
+header .nav-link {
+  color: #1C1B1B;
+}
 header .soc-header {
   list-style: none;
   align-items: flex-start;
@@ -23,13 +35,50 @@ header .navbar-brand {
   max-width: 1064px;
 }
 
-.main_banner {
+.main-banner {
   background-color: #F0EFEB;
   padding: 90px 0;
 }
-.main_banner h1 {
+.main-banner h1 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+  color: #000000;
   margin-bottom: 42px;
 }
-.main_banner p {
+.main-banner p {
   margin-bottom: 26px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+.main-banner .btn-dark {
+  background: #000000;
+  border-radius: 100px;
+  padding: 7px 23px 9px;
+}
+.main-banner a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.main-banner .main-img {
+  position: relative;
+  right: -30px;
+  background-color: #F0EFEB;
+}
+@media screen and (max-width: 992px) {
+  .main-banner .main-img {
+    right: 0;
+    width: 100%;
+    display: block;
+  }
 }
