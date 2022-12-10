@@ -11,6 +11,11 @@ $main_color: #000000;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    img {
+        width: 100%;
+        display: block;
+    }
 }
 
 header {
@@ -33,7 +38,7 @@ header {
         li {
             &:first-of-type {
                 margin-right: 15px;
-                padding-top: 8px;
+                padding-top: 12px;
             }
 
             &:last-of-type {
@@ -49,7 +54,7 @@ header {
     .navbar-brand {
         position: absolute;
         left: 50%;
-        top: 10px;
+        top: 16px;
         margin-left: -40px;
     }
 }
@@ -82,7 +87,6 @@ header {
         @include max-screen(950px) {
             font-size: 40px;
             line-height: 45px;
-            width: 100%;
         }
 
         @include max-screen(450px) {
@@ -138,18 +142,16 @@ header {
             width: 100%;
             display: block;
         }
-
-        @include max-screen(992px) {
-            right: 0;
-            width: 100%;
-            display: block;
-        }
     }
 }
 
 .best-sellers {
     background-color: #FFFFFF;
     padding: 60px 0 228px;
+
+    @include max-screen(767px) {
+        padding: 60px 0 78px;
+    }
 
     img {
         margin-bottom: 7px;
@@ -170,6 +172,16 @@ header {
             text-align: center;
             color: $main_color;
             padding-bottom: 19px;
+
+            @include max-screen(950px) {
+                font-size: 30px;
+                line-height: 35px;
+            }
+
+            @include max-screen(450px) {
+                font-size: 23px;
+                line-height: 25px;
+            }
         }
 
         &.best {
@@ -181,6 +193,16 @@ header {
             text-align: center;
             color: $main_color;
             padding-bottom: 44px;
+
+            @include max-screen(950px) {
+                font-size: 30px;
+                line-height: 35px;
+            }
+
+            @include max-screen(450px) {
+                font-size: 23px;
+                line-height: 25px;
+            }
         }
     }
 
@@ -194,6 +216,16 @@ header {
             text-align: center;
             color: $main_color;
             padding-bottom: 31px;
+
+            @include max-screen(950px) {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            @include max-screen(450px) {
+                font-size: 13px;
+                line-height: 15px;
+            }
         }
 
         &.available {
@@ -205,6 +237,17 @@ header {
             text-align: center;
             color: $main_color;
             padding-bottom: 72px;
+
+            @include max-screen(950px) {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            @include max-screen(450px) {
+                font-size: 13px;
+                line-height: 15px;
+                padding-bottom: 32px;
+            }
         }
     }
 
@@ -222,6 +265,11 @@ header {
             max-width: 156px;
             margin: auto;
             margin-bottom: 17px;
+
+            @include max-screen(450px) {
+                font-size: 14px;
+                line-height: 16px;
+            }
         }
 
         p {
@@ -233,6 +281,11 @@ header {
             text-align: center;
             color: $main_color;
             margin-bottom: 10px;
+
+            @include max-screen(450px) {
+                font-size: 14px;
+                line-height: 16px;
+            }
         }
 
         a {
@@ -244,6 +297,11 @@ header {
             text-align: center;
             text-decoration-line: underline;
             color: $main_color;
+
+            @include max-screen(450px) {
+                font-size: 14px;
+                line-height: 16px;
+            }
         }
     }
 }
@@ -251,6 +309,17 @@ header {
 .portfolio {
     padding: 76px 0 51px;
     background-color: #CCCCCC4D;
+
+    .col-md-5 {
+        img {
+            display: block;
+            width: 100%;
+
+            @include max-screen(950px) {
+                margin-bottom: 20px;
+            }
+        }
+    }
 
     h4 {
         font-family: $main_font;
@@ -260,6 +329,16 @@ header {
         line-height: 42px;
         color: $main_color;
         padding-bottom: 23px;
+
+        @include max-screen(950px) {
+            font-size: 30px;
+            line-height: 35px;
+        }
+
+        @include max-screen(450px) {
+            font-size: 23px;
+            line-height: 25px;
+        }
     }
 
     p {
@@ -270,6 +349,16 @@ header {
         line-height: 42px;
         color: $main_color;
         padding-bottom: 24px;
+
+        @include max-screen(950px) {
+            font-size: 27px;
+            line-height: 32px;
+        }
+
+        @include max-screen(450px) {
+            font-size: 23px;
+            line-height: 25px;
+        }
     }
 
     a {
@@ -287,6 +376,29 @@ header {
     padding: 76px 0 51px;
     background-color: #CCCCCC99;
 
+    .col-md-5 {
+        img {
+            display: block;
+            width: 100%;
+
+            @include max-screen(950px) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .order-1 {
+        @include max-screen(767px) {
+            order: 2;
+        }
+    }
+
+    .order-2 {
+        @include max-screen(767px) {
+            order: 1;
+        }
+    }
+
     h4 {
         font-family: $main_font;
         font-style: normal;
@@ -295,6 +407,16 @@ header {
         line-height: 42px;
         color: $main_color;
         padding-bottom: 23px;
+
+        @include max-screen(950px) {
+            font-size: 30px;
+            line-height: 35px;
+        }
+
+        @include max-screen(450px) {
+            font-size: 23px;
+            line-height: 25px;
+        }
     }
 
     p {
@@ -305,6 +427,16 @@ header {
         line-height: 42px;
         color: $main_color;
         padding-bottom: 15px;
+
+        @include max-screen(950px) {
+            font-size: 27px;
+            line-height: 32px;
+        }
+
+        @include max-screen(450px) {
+            font-size: 23px;
+            line-height: 25px;
+        }
     }
 
     a {
@@ -322,6 +454,17 @@ header {
     padding: 76px 0 51px;
     background-color: #CCCCCC4D;
 
+    .col-md-5 {
+        img {
+            display: block;
+            width: 100%;
+
+            @include max-screen(950px) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
     h4 {
         font-family: $main_font;
         font-style: normal;
@@ -330,6 +473,16 @@ header {
         line-height: 42px;
         color: $main_color;
         padding-bottom: 23px;
+
+        @include max-screen(950px) {
+            font-size: 30px;
+            line-height: 35px;
+        }
+
+        @include max-screen(450px) {
+            font-size: 23px;
+            line-height: 25px;
+        }
     }
 
     p {
@@ -340,6 +493,16 @@ header {
         line-height: 42px;
         color: $main_color;
         padding-bottom: 23px;
+
+        @include max-screen(950px) {
+            font-size: 27px;
+            line-height: 32px;
+        }
+
+        @include max-screen(450px) {
+            font-size: 23px;
+            line-height: 25px;
+        }
     }
 
     a {
@@ -357,6 +520,10 @@ header {
     padding-top: 190px;
     background-color: #FFFFFF;
 
+    @include max-screen(767px) {
+        padding-top: 90px;
+    }
+
     .col-md-4 {
         font-family: $main_font;
         font-style: normal;
@@ -366,6 +533,17 @@ header {
         text-align: center;
         color: $main_color;
         padding-bottom: 111px;
+
+        @include max-screen(950px) {
+            font-size: 30px;
+            line-height: 35px;
+        }
+
+        @include max-screen(450px) {
+            padding-bottom: 51px;
+            font-size: 23px;
+            line-height: 25px;
+        }
 
         &::before {
             content: "";
@@ -418,6 +596,16 @@ header {
         text-align: center;
         color: $main_color;
         margin-bottom: 69px;
+
+        @include max-screen(950px) {
+            font-size: 30px;
+            line-height: 35px;
+        }
+
+        @include max-screen(450px) {
+            font-size: 23px;
+            line-height: 25px;
+        }
     }
 }
 
@@ -434,12 +622,21 @@ header {
         color: $main_color;
         padding-top: 52px;
         margin-bottom: 290px;
+
+        @include max-screen(950px) {
+            font-size: 30px;
+            line-height: 35px;
+        }
+
+        @include max-screen(450px) {
+            font-size: 23px;
+            line-height: 25px;
+        }
     }
 
     .grey-bg {
         height: 480px;
         background-color: #F0F0F0;
-
 
         @include max-screen(767px) {
             height: auto;
@@ -447,7 +644,7 @@ header {
 
         article {
             position: relative;
-            top: -210px;
+            top: -188px;
 
             &.card-body {
                 padding-bottom: 32px;
@@ -467,6 +664,17 @@ header {
                 letter-spacing: 0.6px;
                 color: $main_color;
                 margin-bottom: 34px;
+
+                @include max-screen(950px) {
+                    font-size: 19px;
+                    line-height: 23px;
+                    height: 70px;
+                }
+
+                @include max-screen(450px) {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
             }
 
             h5 {
@@ -478,6 +686,17 @@ header {
                 text-align: center;
                 color: $main_color;
                 margin-bottom: 44px;
+
+                @include max-screen(950px) {
+                    font-size: 17px;
+                    line-height: 21px;
+                    height: 40px;
+                }
+
+                @include max-screen(450px) {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
             }
 
             a {
