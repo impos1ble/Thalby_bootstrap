@@ -694,7 +694,7 @@ header {
         height: 480px;
         background-color: #F0F0F0;
 
-        @include max-screen(767px) {
+        @include max-screen(768px) {
             height: auto;
         }
 
@@ -702,12 +702,20 @@ header {
             position: relative;
             top: -188px;
 
+            @include max-screen(1000px) {
+                top: -164px;
+            }
+
             &.card-body {
                 padding-bottom: 32px;
             }
 
             img {
                 margin-bottom: 15px;
+
+                @include max-screen(1000px) {
+                    width: 250px;
+                }
 
                 @include max-screen(320px) {
                     width: 100%;

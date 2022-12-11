@@ -660,7 +660,7 @@ header .navbar-brand {
   height: 480px;
   background-color: #F0F0F0;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .each .grey-bg {
     height: auto;
   }
@@ -669,11 +669,21 @@ header .navbar-brand {
   position: relative;
   top: -188px;
 }
+@media screen and (max-width: 1000px) {
+  .each .grey-bg article {
+    top: -164px;
+  }
+}
 .each .grey-bg article.card-body {
   padding-bottom: 32px;
 }
 .each .grey-bg article img {
   margin-bottom: 15px;
+}
+@media screen and (max-width: 1000px) {
+  .each .grey-bg article img {
+    width: 250px;
+  }
 }
 @media screen and (max-width: 320px) {
   .each .grey-bg article img {
