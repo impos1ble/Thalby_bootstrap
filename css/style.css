@@ -693,14 +693,14 @@ header .navbar-brand {
 }
 @media screen and (max-width: 950px) {
   .each .grey-bg article p {
-    font-size: 19px;
-    line-height: 23px;
+    font-size: 18px;
+    line-height: 22px;
     height: 70px;
   }
 }
 @media screen and (max-width: 450px) {
   .each .grey-bg article p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 20px;
     height: 40px;
   }
@@ -751,18 +751,17 @@ header .navbar-brand {
 }
 .form .form-group {
   margin-bottom: 0;
-  padding-bottom: 16px;
 }
 .form .form-group .form-control {
-  padding: 12px 76px 11px 8px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
   border-radius: 0;
   border: 1px solid #000000;
-}
-.form .form-group .form-control.width {
-  width: 155px;
-}
-.form .form-group .form-control.width1 {
-  width: 366px;
+  padding: 12px 5px 11px 8px;
 }
 .form .form-group .form-control::-webkit-input-placeholder {
   font-family: "Roboto", sans-serif;
@@ -806,6 +805,18 @@ header .navbar-brand {
   color: #000000;
   margin-bottom: 9px;
 }
+@media screen and (max-width: 950px) {
+  .form h3 {
+    font-size: 25px;
+    line-height: 28px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .form h3 {
+    font-size: 21px;
+    line-height: 24px;
+  }
+}
 .form p {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -814,7 +825,19 @@ header .navbar-brand {
   line-height: 20px;
   text-align: center;
   color: #000000;
-  margin-bottom: 0;
+  margin-bottom: 11px;
+}
+@media screen and (max-width: 950px) {
+  .form p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .form p {
+    font-size: 13px;
+    line-height: 15px;
+  }
 }
 .form .btn-dark {
   background: #000000;
@@ -828,6 +851,7 @@ header .navbar-brand {
   text-align: center;
   color: #FFFFFF;
   padding: 7px 23px 10px;
+  margin-top: 16px;
 }
 
 footer {
@@ -860,6 +884,12 @@ footer .about li {
   color: #FFFFFF;
   margin-bottom: 12px;
 }
+@media screen and (max-width: 350px) {
+  footer .about li {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
 footer .about li:first-of-type {
   margin-bottom: 36px;
 }
@@ -880,6 +910,12 @@ footer .contact li {
   line-height: 23px;
   color: #FFFFFF;
   margin-bottom: 12px;
+}
+@media screen and (max-width: 350px) {
+  footer .contact li {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 footer .contact li:first-of-type {
   margin-bottom: 36px;
