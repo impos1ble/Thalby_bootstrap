@@ -11,12 +11,15 @@ $main_color: #000000;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
-    img {
-        width: 100%;
-        display: block;
-    }
 }
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden
+}
+
 
 header {
     .navbar-nav {
@@ -38,7 +41,7 @@ header {
         li {
             &:first-of-type {
                 margin-right: 15px;
-                padding-top: 12px;
+                padding-top: 8px;
             }
 
             &:last-of-type {
@@ -56,6 +59,10 @@ header {
         left: 50%;
         top: 16px;
         margin-left: -40px;
+
+        @include max-screen(991px) {
+            top: 10px;
+        }
     }
 }
 
@@ -84,7 +91,7 @@ header {
         color: $main_color;
         margin-bottom: 42px;
 
-        @include max-screen(950px) {
+        @include max-screen(1038px) {
             font-size: 40px;
             line-height: 45px;
         }
@@ -92,6 +99,7 @@ header {
         @include max-screen(450px) {
             font-size: 30px;
             line-height: 35px;
+            text-align: center;
         }
     }
 
@@ -112,6 +120,7 @@ header {
         @include max-screen(450px) {
             font-size: 15px;
             line-height: 20px;
+            text-align: center;
         }
     }
 
@@ -119,6 +128,12 @@ header {
         background: #000000;
         border-radius: 100px;
         padding: 7px 23px 9px;
+
+        @include max-screen(450px) {
+            position: relative;
+            left: 50%;
+            margin-left: -62px;
+        }
     }
 
     a {
@@ -131,16 +146,14 @@ header {
     }
 
     .main-img {
+        background-color: #F0EFEB;
         position: relative;
         right: -30px;
-        background-color: #F0EFEB;
-        width: 100%;
         display: block;
+        width: 100%;
 
-        @include max-screen(1094px) {
+        @include max-screen(1065px) {
             right: 0;
-            width: 100%;
-            display: block;
         }
     }
 }
@@ -331,12 +344,16 @@ header {
         padding-bottom: 23px;
 
         @include max-screen(950px) {
-            font-size: 30px;
-            line-height: 35px;
+            font-size: 28px;
+            line-height: 33px;
+        }
+
+        @include max-screen(767px) {
+            text-align: center;
         }
 
         @include max-screen(450px) {
-            font-size: 23px;
+            font-size: 22px;
             line-height: 25px;
         }
     }
@@ -351,13 +368,18 @@ header {
         padding-bottom: 24px;
 
         @include max-screen(950px) {
-            font-size: 27px;
-            line-height: 32px;
+            font-size: 26px;
+            line-height: 30px;
+        }
+
+        @include max-screen(767px) {
+            text-align: center;
         }
 
         @include max-screen(450px) {
-            font-size: 23px;
-            line-height: 25px;
+            font-size: 20px;
+            line-height: 24px;
+            ;
         }
     }
 
@@ -369,6 +391,12 @@ header {
         line-height: 20px;
         text-decoration-line: underline;
         color: $main_color;
+
+        @include max-screen(767px) {
+            position: relative;
+            left: 50%;
+            margin-left: -79px;
+        }
     }
 }
 
@@ -409,12 +437,16 @@ header {
         padding-bottom: 23px;
 
         @include max-screen(950px) {
-            font-size: 30px;
-            line-height: 35px;
+            font-size: 28px;
+            line-height: 33px;
+        }
+
+        @include max-screen(767px) {
+            text-align: center;
         }
 
         @include max-screen(450px) {
-            font-size: 23px;
+            font-size: 22px;
             line-height: 25px;
         }
     }
@@ -429,13 +461,17 @@ header {
         padding-bottom: 15px;
 
         @include max-screen(950px) {
-            font-size: 27px;
-            line-height: 32px;
+            font-size: 26px;
+            line-height: 30px;
+        }
+
+        @include max-screen(767px) {
+            text-align: center;
         }
 
         @include max-screen(450px) {
-            font-size: 23px;
-            line-height: 25px;
+            font-size: 20px;
+            line-height: 24px;
         }
     }
 
@@ -447,6 +483,12 @@ header {
         line-height: 20px;
         text-decoration-line: underline;
         color: $main_color;
+
+        @include max-screen(767px) {
+            position: relative;
+            right: 50%;
+            margin-right: -79px;
+        }
     }
 }
 
@@ -475,12 +517,16 @@ header {
         padding-bottom: 23px;
 
         @include max-screen(950px) {
-            font-size: 30px;
-            line-height: 35px;
+            font-size: 28px;
+            line-height: 33px;
+        }
+
+        @include max-screen(767px) {
+            text-align: center;
         }
 
         @include max-screen(450px) {
-            font-size: 23px;
+            font-size: 22px;
             line-height: 25px;
         }
     }
@@ -495,13 +541,17 @@ header {
         padding-bottom: 23px;
 
         @include max-screen(950px) {
-            font-size: 27px;
-            line-height: 32px;
+            font-size: 26px;
+            line-height: 30px;
+        }
+
+        @include max-screen(767px) {
+            text-align: center;
         }
 
         @include max-screen(450px) {
-            font-size: 23px;
-            line-height: 25px;
+            font-size: 20px;
+            line-height: 24px;
         }
     }
 
@@ -513,6 +563,12 @@ header {
         line-height: 20px;
         text-decoration-line: underline;
         color: $main_color;
+
+        @include max-screen(767px) {
+            position: relative;
+            left: 50%;
+            margin-left: -53px;
+        }
     }
 }
 
@@ -652,6 +708,10 @@ header {
 
             img {
                 margin-bottom: 15px;
+
+                @include max-screen(320px) {
+                    width: 100%;
+                }
             }
 
             p {
@@ -674,6 +734,7 @@ header {
                 @include max-screen(450px) {
                     font-size: 16px;
                     line-height: 20px;
+                    height: 40px;
                 }
             }
 
@@ -696,6 +757,7 @@ header {
                 @include max-screen(450px) {
                     font-size: 14px;
                     line-height: 17px;
+                    height: 20px;
                 }
             }
 
@@ -708,6 +770,11 @@ header {
                 text-align: center;
                 text-decoration-line: underline;
                 color: $main_color;
+
+                @include max-screen(450px) {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
             }
         }
     }
@@ -827,6 +894,7 @@ footer {
 
     img {
         margin-bottom: 37px;
+
     }
 
     ul {
