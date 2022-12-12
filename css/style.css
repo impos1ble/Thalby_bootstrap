@@ -269,6 +269,13 @@ header .navbar-brand {
     line-height: 16px;
   }
 }
+@media screen and (max-width: 444px) {
+  .best-sellers .card h5 {
+    height: 60px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
 .best-sellers .card p {
   font-family: "Roboto", sans-serif;
   font-style: normal;

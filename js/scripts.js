@@ -4,7 +4,7 @@ $('.owl-carousel').owlCarousel({
     nav: true,
     dotsEach: true,
     navText: ['', ' '],
-    autoplay: true,
+    // autoplay: true,
     autoplayTimeout: 2000,
     responsive: {
         0: {

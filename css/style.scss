@@ -289,6 +289,12 @@ header {
                 font-size: 14px;
                 line-height: 16px;
             }
+
+            @include max-screen(444px) {
+                height: 60px;
+                font-size: 12px;
+                line-height: 14px;
+            }
         }
 
         p {
