@@ -60,7 +60,7 @@ header {
         top: 16px;
         margin-left: -40px;
 
-        @include max-screen(991px) {
+        @include max-screen(991.98px) {
             top: 10px;
         }
     }
@@ -96,10 +96,13 @@ header {
             line-height: 45px;
         }
 
+        @include max-screen(991.98px) {
+            text-align: center;
+        }
+
         @include max-screen(450px) {
             font-size: 30px;
             line-height: 35px;
-            text-align: center;
         }
     }
 
@@ -117,10 +120,13 @@ header {
             line-height: 22px;
         }
 
+        @include max-screen(991.98px) {
+            text-align: center;
+        }
+
         @include max-screen(450px) {
             font-size: 15px;
             line-height: 20px;
-            text-align: center;
         }
     }
 
@@ -129,7 +135,7 @@ header {
         border-radius: 100px;
         padding: 7px 23px 9px;
 
-        @include max-screen(450px) {
+        @include max-screen(991.98px) {
             position: relative;
             left: 50%;
             margin-left: -62px;
@@ -162,7 +168,7 @@ header {
     background-color: #FFFFFF;
     padding: 60px 0 228px;
 
-    @include max-screen(767px) {
+    @include max-screen(767.98px) {
         padding: 60px 0 78px;
     }
 
@@ -348,7 +354,7 @@ header {
             line-height: 33px;
         }
 
-        @include max-screen(767px) {
+        @include max-screen(767.98px) {
             text-align: center;
         }
 
@@ -372,7 +378,7 @@ header {
             line-height: 30px;
         }
 
-        @include max-screen(767px) {
+        @include max-screen(767.98px) {
             text-align: center;
         }
 
@@ -392,7 +398,7 @@ header {
         text-decoration-line: underline;
         color: $main_color;
 
-        @include max-screen(767px) {
+        @include max-screen(767.98px) {
             position: relative;
             left: 50%;
             margin-left: -79px;
@@ -416,13 +422,13 @@ header {
     }
 
     .order-1 {
-        @include max-screen(767px) {
+        @include max-screen(767.98px) {
             order: 2;
         }
     }
 
     .order-2 {
-        @include max-screen(767px) {
+        @include max-screen(767.98px) {
             order: 1;
         }
     }
@@ -441,7 +447,7 @@ header {
             line-height: 33px;
         }
 
-        @include max-screen(767px) {
+        @include max-screen(767.98px) {
             text-align: center;
         }
 
@@ -465,7 +471,7 @@ header {
             line-height: 30px;
         }
 
-        @include max-screen(767px) {
+        @include max-screen(767.98px) {
             text-align: center;
         }
 
@@ -484,7 +490,7 @@ header {
         text-decoration-line: underline;
         color: $main_color;
 
-        @include max-screen(767px) {
+        @include max-screen(767.98px) {
             position: relative;
             right: 50%;
             margin-right: -79px;
@@ -521,7 +527,7 @@ header {
             line-height: 33px;
         }
 
-        @include max-screen(767px) {
+        @include max-screen(767.98px) {
             text-align: center;
         }
 
@@ -545,7 +551,7 @@ header {
             line-height: 30px;
         }
 
-        @include max-screen(767px) {
+        @include max-screen(767.98px) {
             text-align: center;
         }
 
@@ -564,7 +570,7 @@ header {
         text-decoration-line: underline;
         color: $main_color;
 
-        @include max-screen(767px) {
+        @include max-screen(767.98px) {
             position: relative;
             left: 50%;
             margin-left: -53px;
@@ -576,7 +582,7 @@ header {
     padding-top: 190px;
     background-color: #FFFFFF;
 
-    @include max-screen(767px) {
+    @include max-screen(767.98px) {
         padding-top: 90px;
     }
 
@@ -694,7 +700,7 @@ header {
         height: 480px;
         background-color: #F0F0F0;
 
-        @include max-screen(768px) {
+        @include max-screen(767.98px) {
             height: auto;
         }
 
