@@ -4,8 +4,8 @@ $('.owl-carousel').owlCarousel({
     nav: true,
     dotsEach: true,
     navText: ['', ' '],
-    // autoplay: true,
-    autoplayTimeout: 2000,
+    autoplay: true,
+    autoplayTimeout: 3000,
     responsive: {
         0: {
             items: 2
